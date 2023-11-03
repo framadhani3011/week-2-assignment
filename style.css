@@ -1,12 +1,12 @@
+@font-face {
+    font-family: edutasBeginner;
+    src: url(/EduTASBeginner-Regular.ttf);
+    font-weight: bold;
+}
+
 body {
     font-family: sans-serif;
     background-color: rgb(120, 191, 244);
-}
-
-@media screen and (max-width: 500px) {
-    body {
-        background-color: aqua;
-    }
 }
 
 nav {
@@ -24,11 +24,19 @@ nav > ul > li {
     display: inline-block
 }
 
+img {
+    width: 200px;
+    height: auto;
+    max-height: 100px;
+}
+
 header {
     background-color: #aaaaaa;
     text-align: center;
     font-size: 30px;
     padding: 50px;
+    font-family: eduTASBeginner;
+    text-shadow: 2px 2px #000000;
     
 }
 
@@ -61,4 +69,39 @@ input[type="submit"] {
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        margin-left: 6px;
+        padding: 8px;
+    }
+    
+    header {
+        background-color: #bbbbbb;
+        background-size: cover;
+        font-size: 25px;
+    }
+    
+    body {
+        background-color: aqua;
+        flex-direction: column;
+    }
+
+    section {
+        font-size: 12px;
+        display: inline;
+        flex-direction: column;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 100%;
+        height: 70px;
+
+    }
 }
